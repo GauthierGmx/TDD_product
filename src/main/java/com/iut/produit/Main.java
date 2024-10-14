@@ -1,4 +1,4 @@
-
+package com.iut.produit;
 
 public class Main {
 
