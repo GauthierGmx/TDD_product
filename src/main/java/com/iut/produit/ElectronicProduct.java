@@ -1,19 +1,19 @@
 package com.iut.produit;
 
 class ElectronicProduct extends AbstractProduct {
-    private String Elbrand;
+    private String elBrand;
 
     protected ElectronicProduct(String name, double cost, String brand) {
         super(name, cost);
-        this.Elbrand = brand;
+        this.elBrand = brand;
     }
 
     public String getBrand() {
-        return Elbrand;
+        return elBrand;
     }
 
     @Override
-    public double CalculatePrice() {
+    public double calculatePrice() {
         // Complexité cyclomatique élevée (calcul compliqué)
         double price = getCost() * 2.0;
         for (int i = 0; i < 100; i++) {
